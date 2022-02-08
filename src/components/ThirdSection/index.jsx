@@ -30,19 +30,19 @@ function ThirdSection() {
                         <p className={`${screen700?`text-xl`:``}`}> Volutpat pretium, hac donec mus etiam morbi augue. Adipiscing sodales tincidunt enim accumsan. Adipiscing netus mi id facilisis. </p>
                         <p className="text-sm font-normal text-gray-200 mt-4 tracking-wider fontFam"> Elmar Platzer </p>
                     </Typography>
-                    <Typography className="text-white !text-2xl !font-bold !mt-8 bg-red-200">
+                    <Typography className="text-white !text-2xl !font-bold !mt-8">
                         <p className={`${screen700?`text-xl`:``}`}> Volutpat pretium, hac donec mus etiam morbi augue. Adipiscing sodales tincidunt enim accumsan. Adipiscing netus mi id facilisis. </p>
                         <p className="text-sm font-normal text-gray-200 mt-4 tracking-wider fontFam"> Elmar Platzer </p>
                     </Typography>
-                    <Typography className="text-white !text-2xl !font-bold !mt-8 bg-red-200">
+                    <Typography className="text-white !text-2xl !font-bold !mt-8">
                         <p className={`${screen700?`text-xl`:``}`}> Volutpat pretium, hac donec mus etiam morbi augue. Adipiscing sodales tincidunt enim accumsan. Adipiscing netus mi id facilisis. </p>
                         <p className="text-sm font-normal text-gray-200 mt-4 tracking-wider fontFam"> Elmar Platzer </p>
                     </Typography>
-                    <Typography className="text-white !text-2xl !font-bold !mt-8 bg-red-200">
+                    <Typography className="text-white !text-2xl !font-bold !mt-8">
                         <p className={`${screen700?`text-xl`:``}`}> Volutpat pretium, hac donec mus etiam morbi augue. Adipiscing sodales tincidunt enim accumsan. Adipiscing netus mi id facilisis. </p>
                         <p className="text-sm font-normal text-gray-200 mt-4 tracking-wider fontFam"> Elmar Platzer </p>
                     </Typography>
-                    <Typography className="text-white !text-2xl !font-bold !mt-8 bg-red-200">
+                    <Typography className="text-white !text-2xl !font-bold !mt-8">
                         <p className={`${screen700?`text-xl`:``}`}> Volutpat pretium, hac donec mus etiam morbi augue. Adipiscing sodales tincidunt enim accumsan. Adipiscing netus mi id facilisis. </p>
                         <p className="text-sm font-normal text-gray-200 mt-4 tracking-wider fontFam"> Elmar Platzer </p>
                     </Typography>

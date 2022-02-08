@@ -9,15 +9,19 @@ import Detail from './Detail';
 import Form from './Form';
 
 
-function FirstSection() {
+function FirstSection({ show }) {
     const screen980 = useMediaQuery('(max-width:980px)');
     const screen860 = useMediaQuery('(max-width:860px)');
     const screen700 = useMediaQuery('(max-width:700px)');
     const screen600 = useMediaQuery('(max-width:600px)');
+    const screen410 = useMediaQuery('(max-width:410px)');
+    const screen400 = useMediaQuery('(max-width:400px)');
+    const screen370 = useMediaQuery('(max-width:370px)');
 
 
     return (
-        <div className={`firstsection ${!screen700?(screen980?`h-[82%]`:`h-[100%]`):``} flex items-center justify-center flex-col p-20 ${screen980?`mt-[-6.85rem]`:``}`}>  {/*pushing up mt-[-6.85]*/}
+        /*!w-[103rem for stretching screen wallpaper*/
+        <div className={`firstsection !w-[103rem] ${!screen700?(screen980?`h-[82%]`:`h-[100%]`):``} flex items-center justify-center flex-col p-20 ${screen980?`mt-[-6.85rem]`:``} ${show&&`visible`}`}>  {/*pushing up mt-[-6.85]*/}
             <div>
                 <AppBar position="sticky" color="transparent" elevation={0} className={`${!screen860?(screen980?`mt-10`:``):`mt-2`}`}>
                     <Toolbar>
@@ -25,7 +29,7 @@ function FirstSection() {
                     </Toolbar>
                 </AppBar>
 
-                <div className={`w-full flex items-center justify-around ${screen700?`flex-col`:`flex-row`} ${!screen700?(screen980?`mt-[-6.2rem]`:`mt-[-5.7rem]`):`mt-[24rem]`}`}>
+                <div className={`w-full flex items-center justify-around ${screen700?`flex-col`:`flex-row`} ${!screen370?(!screen400?(!screen410?(!screen700?(screen980?`mt-[-6.2rem]`:`mt-[-5.7rem]`):`mt-[19.75rem]`):`mt-[20.25rem]`):`mt-[21.25rem]`):`mt-[22.25rem]`}`}>
                     <div className={`${screen860?`mt-14`:`mt-0.5`}`}>
                         <Detail
                         />
