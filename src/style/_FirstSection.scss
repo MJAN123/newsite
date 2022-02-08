@@ -1,5 +1,5 @@
 .firstsection {
-  //height: 100%;
+  //height: 100%; ( after work then comment for responsive design )
     width: 100%;
 
 
@@ -8,28 +8,40 @@
     background-size: cover;
 
 
-    ul {
-        list-style-image: url('../images/li.png');
-    }
-
 
     .MuiOutlinedInput-input {
         height: 1.25rem;
+    }
+    .lilogo {
+        height: 0.815rem;
+        width: 0.805rem;
     }
 
     @media (max-width: 1220px) {
         .MuiOutlinedInput-input {
             height: 1.1rem;
         }
+        .lilogo {
+            height: 0.765rem;
+            width: 0.765rem;
+        }
     }
     @media (max-width: 1050px) {
         .MuiOutlinedInput-input {
             height: 1.075rem;
         }
+        .lilogo {
+            height: 0.715rem;
+            width: 0.715rem;
+        }
     }
     @media (max-width: 980px) {
         .MuiOutlinedInput-input {
             height: 1.375rem;
+        }
+        .lilogo {
+            height: 0.665rem;
+            width: 0.665rem;
         }
     }
     @media (max-width: 860px) {

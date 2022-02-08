@@ -1,7 +1,8 @@
 export { default as background1 } from './background1.png';
 export { default as background2 } from './background2.png';
 export { default as background3 } from './background3.png';
-export { default as header } from './header.png';
+export { default as background4 } from './background4.png';
+export { default as logo } from './logo.png';
 export { default as li } from './li.png';
 export { default as curvered1 } from './curvered1.png';
 export { default as curvered2 } from './curvered2.png';
@@ -11,7 +12,6 @@ export { default as arrow } from './arrow.png';
 export { default as persons } from './persons.png';
 export { default as star } from './star.png';
 export { default as comma } from './comma.png';
-export { default as logo } from './logo.png';
 export { default as arrowbutton } from './arrowbutton.png';
 export { default as linkedin } from './linkedin.png';
 export { default as twitter } from './twitter.png';

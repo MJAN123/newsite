@@ -1,6 +1,8 @@
 //MATERIAL-UI
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
+//IMAGES
+import { li } from '../../images';
 
 
 function Detail() {
@@ -8,6 +10,9 @@ function Detail() {
     const screen1220 = useMediaQuery('(max-width:1220px)');
     const screen940 = useMediaQuery('(max-width:940px)');
     const screen800 = useMediaQuery('(max-width:800px)');
+    //MOBILE-SCREEN
+    const screen700 = useMediaQuery('(max-width:700px)');
+    const screen410 = useMediaQuery('(max-width:410px)');
 
 
     return (
@@ -23,25 +28,28 @@ function Detail() {
                 <Typography className="text-gray-200" variant="p"> Paid every month $680/Year </Typography>
             </div>
 
-            <ul className="w-full mt-8 text-white">
-                <li>
-                    <Typography variant="p">
-                        <span className={`ml-1.5 ${!screen800?(!screen940?(screen1270?`text-md`:`text-[1.05rem]`):`text-[0.925rem]`):`text-[0.835rem]`}`}> Instantly get $10,000 AWS web services credit when you subscribe for 2 years </span>
+            <div className={`mt-8 text-white ${!screen410?(screen700?`w-[23.75rem]`:``):`w-[20.75rem]`}`}>
+                <p className="flex items-center">
+                    <img src={li} alt="" className="lilogo rounded-2xl"/>
+                    <Typography className="pl-2.5" variant="p">
+                        <p className={`ml-1.5 font-medium ${screen700&&`font-bold`} tracking-wide ${!screen700?(!screen800?(!screen940?(screen1270?`text-md`:`text-[0.955rem]`):`text-[0.88rem]`):`text-[0.7975rem]`):`text-[0.945rem]`} ${screen700?`leading-0`:``}`}> Instantly get $10,000 AWS web services credit when subscribe for 2 years </p>
                     </Typography>
-                </li>
+                </p>
 
-                <li className="mt-5">
-                    <Typography variant="p">
-                        <span className={`ml-1.5 ${!screen800?(!screen940?(screen1270?`text-md`:`text-[1.05rem]`):`text-[0.925rem]`):`text-[0.835rem]`}`}> Join the Digital BA community of tech start-ups </span>
+                <p className="flex items-center mt-5">
+                    <img src={li} alt="" className="lilogo rounded-2xl"/>
+                    <Typography className="pl-2.5 " variant="p">
+                        <p className={`ml-1.5 font-medium ${screen700&&`font-bold`} tracking-wide ${!screen700?(!screen800?(!screen940?(screen1270?`text-md`:`text-[0.955rem]`):`text-[0.88rem]`):`text-[0.7975rem]`):`text-[0.945rem]`} ${screen700?`leading-0`:``}`}> Join the Digital BA community of tech start-ups </p>
                     </Typography>
-                </li>
+                </p>
 
-                <li className="mt-5">
-                    <Typography variant="p"> 
-                        <span className={`ml-1.5 ${!screen800?(!screen940?(screen1270?`text-md`:`text-[1.05rem]`):`text-[0.925rem]`):`text-[0.835rem]`}`}> Access to software delivery mentors to help boost your start up </span>
+                <p className="flex items-center mt-5">
+                    <img src={li} alt="" className="lilogo rounded-2xl"/>
+                    <Typography className="pl-2.5 " variant="p">
+                        <p className={`ml-1.5 font-medium ${screen700&&`font-bold`} tracking-wide ${!screen700?(!screen800?(!screen940?(screen1270?`text-md`:`text-[0.955rem]`):`text-[0.88rem]`):`text-[0.7975rem]`):`text-[0.945rem]`} ${screen700?`leading-0`:``}`}> Access to software delivery mentors to help boost your start up </p>
                     </Typography>
-                </li>
-            </ul>
+                </p>
+            </div>
         </div>
     )
 }
